@@ -14,10 +14,26 @@ Se presenta un diagrama con las conexiones entre los diferentes periféricos y e
 ![Screenshot](/Imágenes/SoC.jpg)
 
 El mapa de memoria se presenta a continuación.
+|leds|0x82000000|
+|switchs|0x82000800|
+|buttons|0x82001000|
+|display|0x82001800|
+|ledRGB_1|0x82002000|
+|ledRGB_2|0x82002800|
+|vga_cntrl|0x82003000|
+|uart1|0x82004000|
+|uart2|0x82005000|
+|uart3|0x82006000|
+|infra_cntrl|0x82006800|
+|pwm_cntrl|0x82007000|
+|ultrasonido|0x82007800|
+|ctrl|0x82008000|
+|timer0|0x82008800|
+|uart|0x82009000|
 
-<p align="center">
-  <img src="/Imagenes/mem_bases.PNG" align="center">
-</p>
+
+| Contenido de la celda  | Contenido de la celda  |
+| Contenido de la celda  | Contenido de la celda  |
 
 ## [Firmware](/Soc_project/firmware/) :
 Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/firmware/main.c). 
