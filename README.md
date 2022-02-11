@@ -11,7 +11,7 @@ Este es el repositorio del Robot Cartógrafo para la Asignatura de Electrónica 
 Como periféricos se implementaron un sensor de temperatura SHT31, un sensor infrarrojo seguidor de línea de 5 canales, 2 motores-reductores conectados a un puente H, un módulo bluetooth, un servo motor y un ultradonido HC-sr04. Se utilizó también un microprocesador Arduino Mega 2560 para realizar algunas conexiones y control de algunos procesos, los cuales se describirán más adelante. 
 
 Se presenta un diagrama con las conexiones entre los diferentes periféricos y el SoC:
-![Screenshot](/Imagenes/Diagrama.png)
+![Screenshot](/Imágenes/SoC.jpg)
 
 El mapa de memoria se presenta a continuación.
 
