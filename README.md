@@ -19,17 +19,13 @@ El mapa de memoria se presenta a continuación.
   <img src="/Imagenes/mem_bases.PNG" align="center">
 </p>
 
-## [SoC](/Soc_project/) :
-Se realiza una descripción de la arquitectura del robot cartógrafo y el desaroolo en Litex para el ensamble y la integración del microprocesador picoRV32, el bus de datos Wishbone y los periféricos [Soc](/Soc_project/). 
-
 ## [Firmware](/Soc_project/firmware/) :
 Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/firmware/main.c). 
 
 ## Periféricos :
 En cada uno de los links se presenta el módulo en verilog y una explicación detallada del código utilizado para su funcionamiento.
 
-- [Cámara](/module/verilog/camara/)
-- [Radar](/module/verilog/ultrasonido/)
+- [Ultrasonido](/module/verilog/ultrasonido/)
 - [Motores](/module/verilog/motor/)
 - [Infrarrojos](/module/verilog/Infrarrojo/)
 - [Sensor de Temperatura](Sensor)
@@ -42,10 +38,11 @@ Se alimentan los periféricos a través de una extensión y un cargador de 5V/2A
 ## Pruebas de Funcionamiento :
 Se encuentra a continuación un enlace con los vídeos de funcionamiento de cada uno de los periféricos y el resultado final.
 
-- [Resultado Final](https://drive.google.com/file/d/1Xd9sIncNKMFobtAyz-pI7O6QL3_JgV-1/view?usp=sharing)
-- [Sensor de Temperatura](https://drive.google.com/file/d/1pixrffHi19yyft5Y8nsA9vXhZh5-91hg/view?usp=sharing)
-- [Ultrasonido/Giro Derecha](https://drive.google.com/file/d/1ecpE0GoPpAQQU9fcsPIzm5rsk7ttgX0Z/view?usp=sharing)
-- [Ultrasonido/Giro Izquierda](https://drive.google.com/file/d/1iYyBev4-YIb3iKXd45IIhB8J5pmOiLwX/view?usp=sharing)
-- [Servomotor](https://drive.google.com/file/d/10o4X6v5wiUOjCU5KL25QMH4Qd_uEWAP3/view?usp=sharing)
-- [Detección infrarrojo](https://drive.google.com/file/d/1VY-55Iuy-bAf_h2HWuiaHlmfi-5JuQ0W/view?usp=sharing)
+- [Detección infrarrojo]()
+- [Ultrasonido/Giro Izquierda]()
+- [Ultrasonido/Giro Derecha]()
+- [Servomotor]()
+- [Bluetooth]()
+- [Sensor de Temperatura y Humedad]()
+- [Resultado Final]()
 
