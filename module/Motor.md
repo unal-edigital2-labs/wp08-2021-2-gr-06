@@ -120,7 +120,7 @@ void Parar () {
   
 }
 ```
-``` c
+``` C
 void rotate_car(bool right){
 	if (right){
 		// Rotación a la derecha
