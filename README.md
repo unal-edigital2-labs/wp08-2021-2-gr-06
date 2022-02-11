@@ -19,13 +19,13 @@ El mapa de memoria se presenta a continuación.
   <img src="/Imagenes/mem_bases.PNG" align="center">
 </p>
 
-## [SoC](/Soc_project/) :robot:
+## [SoC](/Soc_project/) :
 Se realiza una descripción de la arquitectura del robot cartógrafo y el desaroolo en Litex para el ensamble y la integración del microprocesador picoRV32, el bus de datos Wishbone y los periféricos [Soc](/Soc_project/). 
 
 ## [Firmware](/Soc_project/firmware/) :man_technologist:
 Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/Soc_project/firmware/main.c). 
 
-## Periféricos :electric_plug:
+## Periféricos :
 En cada uno de los links se presenta el módulo en verilog y una explicación detallada del código utilizado para su funcionamiento.
 
 - [Cámara](/Soc_project/module/verilog/camara/)
@@ -39,7 +39,7 @@ En cada uno de los links se presenta el módulo en verilog y una explicación de
 ## Alimentación:
 Se alimentan los periféricos a través de una extensión y un cargador de 5V/2A. El puente H se alimenta con 8 pilas AA para alcanzar los 12 voltios requeridos y la corriente que necesitan los motores para mover el carro. Debido a algunos inconvenientes con la alimentación de la FPGA y el Arduino, estos se conectan a los puertos USB del computador y se debe mover el computador según la ruta que siga el robot.
 
-## Pruebas de Funcionamiento :clapper:
+## Pruebas de Funcionamiento :
 Se encuentra a continuación un enlace con los vídeos de funcionamiento de cada uno de los periféricos y el resultado final.
 
 - [Resultado Final](https://drive.google.com/file/d/1Xd9sIncNKMFobtAyz-pI7O6QL3_JgV-1/view?usp=sharing)
