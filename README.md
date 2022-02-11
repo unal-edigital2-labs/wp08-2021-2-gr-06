@@ -22,7 +22,7 @@ El mapa de memoria se presenta a continuación.
 ## [SoC](/Soc_project/) :
 Se realiza una descripción de la arquitectura del robot cartógrafo y el desaroolo en Litex para el ensamble y la integración del microprocesador picoRV32, el bus de datos Wishbone y los periféricos [Soc](/Soc_project/). 
 
-## [Firmware](/Soc_project/firmware/) :man_technologist:
+## [Firmware](/Soc_project/firmware/) :
 Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/Soc_project/firmware/main.c). 
 
 ## Periféricos :
