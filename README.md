@@ -14,6 +14,8 @@ Se presenta un diagrama con las conexiones entre los diferentes periféricos y e
 ![Screenshot](/Imágenes/SoC.jpg)
 
 El mapa de memoria se presenta a continuación.
+| csr_base| Direccion |
+| ------------- | ------------- |
 |leds|0x82000000|
 |switchs|0x82000800|
 |buttons|0x82001000|
