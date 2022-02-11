@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Feb  9 14:44:51 2022
+# Process ID: 214258
+# Current directory: /home/manuela/Documentos/proyecto2/ProyectoDigitalII/module/verilog/PWM/PWM.runs/synth_1
+# Command line: vivado -log BloquePWM.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source BloquePWM.tcl
+# Log file: /home/manuela/Documentos/proyecto2/ProyectoDigitalII/module/verilog/PWM/PWM.runs/synth_1/BloquePWM.vds
+# Journal file: /home/manuela/Documentos/proyecto2/ProyectoDigitalII/module/verilog/PWM/PWM.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source BloquePWM.tcl -notrace

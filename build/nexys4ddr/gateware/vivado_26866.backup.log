@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Fri Feb 11 15:59:58 2022
+# Process ID: 26866
+# Current directory: /home/manuela/Documentos/wp08-2021-2-gr-06/build/nexys4ddr/gateware
+# Command line: vivado -mode batch -source nexys4ddr.tcl
+# Log file: /home/manuela/Documentos/wp08-2021-2-gr-06/build/nexys4ddr/gateware/vivado.log
+# Journal file: /home/manuela/Documentos/wp08-2021-2-gr-06/build/nexys4ddr/gateware/vivado.jou
+#-----------------------------------------------------------
+source nexys4ddr.tcl
+# create_project -force -name nexys4ddr -part xc7a100t-CSG324-1
+# set_msg_config -id {Common 17-55} -new_severity {Warning}
+# read_verilog {/home/manuela/Documentos/wp08-2021-2-gr-06/module/verilog/camara.v}
+ERROR: [Common 17-69] Command failed: File '/home/manuela/Documentos/wp08-2021-2-gr-06/module/verilog/camara.v' does not exist
+INFO: [Common 17-206] Exiting Vivado at Fri Feb 11 16:00:18 2022...

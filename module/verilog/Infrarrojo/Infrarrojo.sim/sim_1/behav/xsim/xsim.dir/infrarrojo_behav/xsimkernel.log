@@ -1,0 +1,7 @@
+Running: xsim.dir/infrarrojo_behav/xsimk -simmode gui -wdb infrarrojo_behav.wdb -simrunnum 0 -socket 41241
+Design successfully loaded
+Design Loading Memory Usage: 33408 KB (Peak: 33528 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 115144 KB (Peak: 172676 KB)
+Simulation CPU Usage: 50 ms

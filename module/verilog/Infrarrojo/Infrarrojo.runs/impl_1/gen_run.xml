@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1643754405">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="infrarrojo.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="infrarrojo.ltx"/>
+  <File Type="BG-BGN" Name="infrarrojo.bgn"/>
+  <File Type="RBD_FILE" Name="infrarrojo.rbd"/>
+  <File Type="BG-DRC" Name="infrarrojo.drc"/>
+  <File Type="NPI_FILE" Name="infrarrojo.npi"/>
+  <File Type="RNPI_FILE" Name="infrarrojo.rnpi"/>
+  <File Type="CFI_FILE" Name="infrarrojo.cfi"/>
+  <File Type="PDI-FILE" Name="infrarrojo.pdi"/>
+  <File Type="BITSTR-MMI" Name="infrarrojo.mmi"/>
+  <File Type="BITSTR-BMM" Name="infrarrojo_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="infrarrojo.nky"/>
+  <File Type="BITSTR-RBT" Name="infrarrojo.rbt"/>
+  <File Type="BITSTR-MSK" Name="infrarrojo.msk"/>
+  <File Type="BG-BIN" Name="infrarrojo.bin"/>
+  <File Type="RCFI_FILE" Name="infrarrojo.rcfi"/>
+  <File Type="BG-BIT" Name="infrarrojo.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="infrarrojo_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="infrarrojo_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="infrarrojo_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="infrarrojo.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="infrarrojo_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="infrarrojo_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="infrarrojo_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="infrarrojo_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="infrarrojo_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="infrarrojo_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="infrarrojo_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="infrarrojo_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="infrarrojo_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="infrarrojo_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="infrarrojo_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="infrarrojo_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="infrarrojo_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="infrarrojo_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="infrarrojo_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="infrarrojo_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="infrarrojo_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="infrarrojo_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="infrarrojo_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="infrarrojo_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="infrarrojo_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="infrarrojo_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="infrarrojo_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="infrarrojo_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="infrarrojo_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="infrarrojo_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="infrarrojo_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="infrarrojo_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="infrarrojo_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="infrarrojo_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="infrarrojo_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="infrarrojo_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="infrarrojo_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="infrarrojo_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="infrarrojo_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="infrarrojo_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="infrarrojo_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="infrarrojo_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="infrarrojo_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="infrarrojo_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="infrarrojo_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="infrarrojo_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="infrarrojo_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="infrarrojo.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="infrarrojo_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="infrarrojo_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="infrarrojo_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="infrarrojo_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="infrarrojo_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="infrarrojo_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="infrarrojo_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="infrarrojo.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../Infr.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="infrarrojo"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/xdc/Nexys-A7-100T-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../Proyectos/Robot/xdc/Nexys-A7-100T-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1641314218"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
