@@ -1,4 +1,4 @@
-para la implementación del módulo de verilog se realizó una implementación sencilla que únicamente asigna la entrada del sensor a un registro de salida. Si alguno de los sensores detecta un fragmento de la línea negra se envía un 0, mientras que si no detecta nada envía un 1. Es importante tener en cuenta esto para realizar posteriormente el análisis y procesamiento de datos por medio de software. El hardware solamente se encargará de recoger la información enviada por el sensor.
+Para la implementación del módulo de verilog se realizó una implementación sencilla que únicamente asigna la entrada del sensor a un registro de salida. Si alguno de los sensores detecta un fragmento de la línea negra se envía un 0, mientras que si no detecta nada envía un 1. Es importante tener en cuenta esto para realizar posteriormente el análisis y procesamiento de datos por medio de software. El hardware solamente se encargará de recoger la información enviada por el sensor.
 ``` verilog
 `timescale 1ns / 1ps
 
