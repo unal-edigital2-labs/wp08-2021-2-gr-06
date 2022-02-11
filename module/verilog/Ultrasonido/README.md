@@ -1,13 +1,8 @@
 # ULTRASONIDO
 
-El sensor ultrasonido utilizado para la realizacion del proyecto fue el HC-SR04. Este dispositivo fue usado con el proposito de realizar el mapeo del laberinto y asi poder detectar los obstaculos o en nuestro caso las paredes y del mismo modo los caminos que se encontraban libres. Por otra parte, primero observaremos el driver implementado para lograr un correcto funcionamiento de este dispositivo. 
-
-Lo primero que se hace es que el ultrasoonido al recibir un pulso por el pin TRIG el cual es mayor a 10us, inicia la emision de la onda, y empieza un conteo en el modulo hasta que se recibe una onda similar a la enviada pero ahora por el pin de ECHO. Dado que la onda va hasta el objeto y rebota, el tiempo que se tiene es el doble del que se deberia tener en cuenta para el calculo de la distancia, ademas, de que se envia una onda sonora esto debido a que conocemos la velocidad del sonido, de este modo podemos realizar el calculo de la distancia asi: 
+El ultrasonido realiza el mapeo del laberinto y detecta los obstaculos o paredes. El ultrasonido recibe un pulso por el trigger, iniciando la emision de la onda y empieza un conteo en el modulo hasta que se recibe una onda similar a la enviada por el ECHO. Dado que la onda va hasta el objeto y rebota, el tiempo que se mide es el doble del que se debe tener para el cálculo de la distancia. Puesto que se envia una onda sonora y conocemos la velocidad del sonido, podemos realizar el calculo de la distancia: 
 
 Distancia=Tiempo*342/2
-
-Ademas, debemos tener en cuenta que para la contruccion del driver y el contador se hace uso de una señal de cierta frecuencia conocida, con la cual podremos aumentar el contador cada vez que detecte un flanco de subida, lo que nos permitira a al final obtener una relacion entre los ciclos por cada unidad de distancia. Ahora pasando a la construccion del driver tendremos que, lo primero que se debe hacer es el divisor de frecuencia, en el cual pasaremos de los 100MHz a 34.2KHz
-
 
 ```verilog
 
@@ -40,7 +35,7 @@ endmodule
 
 ```
 
-Ahora con este nuevo reloj del sistema sabemos que sera necesario un contador para saber el tiempo que pasa entre la salidad de la señal por el pin TRIG hasta las llegada del mismo por el pin de ECHO. Para ello hacemos uso de la siguiente funcion If-else la cual nos indicara cuando debe empezar a contar el reloj, la cual sera dada por el momento en que la señal que fue enviaba llegue hasta el pin ECHO.
+Con el nuevo reloj del sistema, se sabe que será necesario un contador para registrar el tiempo que pasa entre la salidad de la señal y su llegada. Para ello se hace uso de la siguiente funcion If-else la cual indicara cuando debe empezar a contar el reloj.
 
 ``` verilog
 if(reset)
@@ -67,11 +62,7 @@ if(reset)
 
 ```
 
-Con base en lo anterior y dado que ya tenemos la informacion del tiempo que demora la señal en ir hasta el objeto y regresar procedemos a calcular la distancia a la que se encuentra. A continuacion encontramos la caja negra que representa el ultrasonido junto con todas sus entradas y salidas 
-
-![Screenshot](/Imagenes/ModuloUltrasonido.png)
-
-Con base en esta informacion podremos proceder a agregar la funcionalidad de nuestro mudulo para su integracion con Litex, para ello debemos tener en cuenta cada una de las entradas y salidas, por lo que crearemos el objeto ultrasonido.py, donde tendremos las variables que se presentan a continuacion: 
+Dado que ya se tiene la informacion del tiempo que demora la señal en ir hasta el objeto y regresar, se calcula la distancia. Con el objeto ultrasonido.py, se asignan las variables trigger y echo a pines físicos, la variable orden a un registro de escritura y las variables done y distancia a registros de lectura.
 
 ``` python
 
@@ -87,12 +78,6 @@ class Ultrasonido(Module,AutoCSR):
         self.done = CSRStatus(1)
         self.distancia = CSRStatus(8)
 
-```
-
-Las señales de clock y reset seran las mismas de todo el sistema; para el caso de las variables trigger y echo debemos tener en cuenta que estas seran las que se conectaran con el mundo exterior por medio de la FPGA, por lo tanto deberan ser asignadas en el constrain tambien. Por otra parte, para el caso de la señal de orden esta debera ser escrita y leida en memoria lo que hace que sea necesario el uso del CSRStorage, por ultimo para el done y distancia estas deben ser leidas desde memoria por lo que se hara uso del CSRStatus. Para que estas variables se puedan comunicar con los pines deben ser instanciadas tal como se observa a continuacion: 
-
-``` python
-
  self.specials +=Instance("bloqueultrasonido",
             i_clk = self.clk,
             i_rst = self.rst,
@@ -106,7 +91,7 @@ Las señales de clock y reset seran las mismas de todo el sistema; para el caso 
 ```
 
 
-Finalmente, debemos tambien agregar este modulo en el buildSocproject.py donde se asignaran las variables de entrada y salida, y tambien se crearan los registros para que se pueda hacer uso de este dispositivo, esto se realiza como se muestra a continuacion: 
+Se agrega este modulo en el buildSocproject.py donde se asignaran las variables de entrada y salida, y tambien se crean los registros para que se pueda hacer uso de este dispositivo:
 
 ``` python
  
