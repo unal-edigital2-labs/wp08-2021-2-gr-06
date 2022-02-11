@@ -112,7 +112,7 @@ static void temhum_test(void){
 ```
 En esta fuinción se obtiene de manera individual el valor de la temperatura y la humedad obtenida por el UART del Arduino.
 
-Todos los resultados se pueden ver en vídeo [aquí](https://drive.google.com/file/d/1VZ01Q7tJp9PNq_aDywC6H3XsN6wYvNeZ/view?usp=sharing).
+Todos los resultados se pueden ver en vídeo [aquí](https://drive.google.com/drive/folders/112-6SYxrrSyqni91OqtPZYYySc63U7gP?usp=sharing).
 
 ## Programa principal  Recorrido del laberinto 
 Antes de proceder con la explicación de nuestro algoritmo para recorrer el laberinto, recordaremos algunas condiciones y aspectos generales planteados.
