@@ -31,7 +31,7 @@ En cada uno de los links se presenta el módulo en verilog y una explicación de
 - [Cámara](/module/verilog/camara/)
 - [Radar](/module/verilog/ultrasonido/)
 - [Motores](/module/verilog/motor/)
-- [Infrarrojos](/module/verilog/infrarrojo/)
+- [Infrarrojos](/module/verilog/Infrarrojo/)
 - [Sensor de Temperatura](Sensor)
 - [Bluetooth](/Bluetooth/)
 - [Arduino](/Arduino)
