@@ -149,3 +149,10 @@ end
 end    
 endmodule
 ```
+
+Finalmente se agregan los módulos y los pines el en buildSoCProject.py
+``` python
+#PWM
+SoCCore.add_csr(self,"pwm_cntrl")
+self.submodules.pwm_cntrl = pwm.PWM(platform.request("pwm_out"))
+```
