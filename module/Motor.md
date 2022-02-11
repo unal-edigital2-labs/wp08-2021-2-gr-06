@@ -1,3 +1,5 @@
+## Motores
+
 Los motores se conectaron por medio de un puente H a un Arduino Mega 2560. Se comunican a través del uart1 en donce dependiendo de la infromación recolectada por los sensores, estos girarán haciendo mover al carrito. 
 
 ````arduino
@@ -120,6 +122,7 @@ void Parar () {
   
 }
 ```
+
 ``` C
 void rotate_car(bool right){
 	if (right){
