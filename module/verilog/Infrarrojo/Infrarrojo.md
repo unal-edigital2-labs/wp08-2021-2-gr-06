@@ -1,4 +1,4 @@
-'''verilog
+``` verilog
 `timescale 1ns / 1ps
 
       module Infrarrojo(
@@ -9,4 +9,4 @@
      assign output_infra = input_infra;
 
     endmodule
-'''
+```
