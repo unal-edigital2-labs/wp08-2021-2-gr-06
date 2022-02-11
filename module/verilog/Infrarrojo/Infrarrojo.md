@@ -1,3 +1,4 @@
+## 
 Para el módulo de los infrarrojos, se implementó un código sencillo en el que únicamente se asigna la entrada a un registro de salida. El sensor infrarrojos envía un 1 si no detecta ningún fragmento de línea negra, y envía un 0 si detecta la línea. Teniendo en cuenta esto, se realiza el procesamiento de la señal por medio de software y solo se adquiere la señal por medio del hardward.
 
 ``` verilog
@@ -12,6 +13,8 @@ Para el módulo de los infrarrojos, se implementó un código sencillo en el que
 
     endmodule
 ```
+
+
 
 ``` python
 from migen import *
@@ -31,3 +34,4 @@ class Infrarrojo(Module,AutoCSR):
             o_output_infra = self.output_infra.status,
         )
 ```
+
