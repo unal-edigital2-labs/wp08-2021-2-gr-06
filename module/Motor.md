@@ -2,7 +2,7 @@
 
 Los motores se conectaron por medio de un puente H a un Arduino Mega 2560. Se comunican a través del uart1 en donce dependiendo de la infromación recolectada por los sensores, estos girarán haciendo mover al carrito. 
 
-````arduino
+```` Arduino
 /////////////////////////////////////////////////////////
 ///// CONTROL MOTORES CARRITO EXPLORADOR - PUENTE H /////
 /////////////////////////////////////////////////////////
