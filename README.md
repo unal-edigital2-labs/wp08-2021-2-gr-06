@@ -23,17 +23,17 @@ El mapa de memoria se presenta a continuación.
 Se realiza una descripción de la arquitectura del robot cartógrafo y el desaroolo en Litex para el ensamble y la integración del microprocesador picoRV32, el bus de datos Wishbone y los periféricos [Soc](/Soc_project/). 
 
 ## [Firmware](/Soc_project/firmware/) :
-Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/Soc_project/firmware/main.c). 
+Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/firmware/main.c). 
 
 ## Periféricos :
 En cada uno de los links se presenta el módulo en verilog y una explicación detallada del código utilizado para su funcionamiento.
 
-- [Cámara](/Soc_project/module/verilog/camara/)
-- [Radar](/Soc_project/module/verilog/ultrasonido/)
-- [Motores](/Soc_project/module/verilog/motor/)
-- [Infrarrojos](/Soc_project/module/verilog/infrarrojo/)
-- [Sensor de Temperatura](/Soc_project/DFP_Player/)
-- [Bluetooth](/Soc_project/Bluetooth/)
+- [Cámara](/module/verilog/camara/)
+- [Radar](/module/verilog/ultrasonido/)
+- [Motores](/module/verilog/motor/)
+- [Infrarrojos](/module/verilog/infrarrojo/)
+- [Sensor de Temperatura](Sensor)
+- [Bluetooth](/Bluetooth/)
 - [Arduino](/Arduino)
 
 ## Alimentación:
