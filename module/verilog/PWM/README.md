@@ -156,3 +156,7 @@ Finalmente se agregan los módulos y los pines el en buildSoCProject.py
 SoCCore.add_csr(self,"pwm_cntrl")
 self.submodules.pwm_cntrl = pwm.PWM(platform.request("pwm_out"))
 ```
+# Mapa de Memoria - Registros del Periférico
+| csr_register| Direccion |      |
+| ------------- | ------------- | ------------- |
+|pwm_cntrl_orden|0x82007000|rw|
