@@ -1,11 +1,11 @@
-## Módulos
+# Módulos
 Se presenta toda la información de los módulos, tanto los archivos de Python como los de Verilog. En cuanto al funcionamiento de estos módulos, puede hacer click en los siguientes enlaces. 
 - [IR](/module/verilog/Infrarrojo)
 - [Motor](/Motor.md) 
 - [PWM](/module/verilog/PWM)
 - [Ultrasonido](/module/verilog/Ultrasonido)
 
-# Uart
+## Uart
 Para la implementación del protocolo UART, se hizo uso de los archivos de litex creados para este propósito. Para poder utilizar el protocolo es necesario agregar las siguientes líneas de código en el archivo [builSoCProject.py](builSoCProject.py):
 
 ```python
