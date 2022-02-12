@@ -53,6 +53,9 @@ En cada uno de los links se presenta el módulo en verilog y una explicación de
 ## Alimentación:
 Se alimentan los periféricos a través de una extensión y un cargador de 5V/2A. El puente H se alimenta con 8 pilas AA para alcanzar los 12 voltios requeridos y la corriente que necesitan los motores para mover el carro. Debido a algunos inconvenientes con la alimentación de la FPGA y el Arduino, estos se conectan a los puertos USB del computador y se debe mover el computador según la ruta que siga el robot.
 
+## Diseño:
+Se realizó un diseño para impresión en 3D de la base del carro cartógrafo y se presentan todos los documentos de diseño en el siguiente enlace [Diseño](/Diseño).
+
 ## Pruebas de Funcionamiento :
 Se encuentra a continuación un enlace con los vídeos de funcionamiento de cada uno de los periféricos y el resultado final. [aqui](https://drive.google.com/drive/folders/112-6SYxrrSyqni91OqtPZYYySc63U7gP?usp=sharing)
 
