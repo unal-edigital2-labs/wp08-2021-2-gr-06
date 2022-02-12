@@ -17,7 +17,7 @@ void loop () {
 }
 
 ```
-En el archivo [main.c](/main/firmware/main.c) se declara la función **rotate_car** la cual recibe una variable booleana que determina la direccción del giro y envía el caracter correspondiente por el uart1 al arduino.
+En el archivo [main.c](/firmware/main.c) se declara la función **rotate_car** la cual recibe una variable booleana que determina la direccción del giro y envía el caracter correspondiente por el uart1 al arduino.
 ``` C
 void rotate_car(bool right){
 	if (right){
