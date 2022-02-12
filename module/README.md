@@ -6,7 +6,7 @@ Se presenta toda la información de los módulos, tanto los archivos de Python c
 - [Ultrasonido](/module/verilog/Ultrasonido)
 
 ## Uart
-Para la implementación del protocolo UART, se hizo uso de los archivos de litex creados para este propósito. Para poder utilizar el protocolo es necesario agregar las siguientes líneas de código en el archivo [builSoCProject.py](/builSoCProject.py):
+Para la implementación del protocolo UART, se hizo uso de los archivos de litex creados para este propósito. Para poder utilizar el protocolo es necesario agregar las siguientes líneas de código en el archivo [builSoCProject.py](/buildSoCProject.py):
 
 ```python
 self.submodules.uart1_phy = uart.UARTPHY(
@@ -23,7 +23,7 @@ if hasattr(self.cpu, "interrupt"):
 else:
   self.add_constant("UART_POLLING")
 ```
-Y asignar los pines RX1 y TX1 en el archivo [nexys4ddr.py](/main/nexys4ddr.py):
+Y asignar los pines RX1 y TX1 en el archivo [nexys4ddr.py](/nexys4ddr.py):
 ```python
 ("uart1", 0,
     Subsignal("tx", Pins("H4")),
