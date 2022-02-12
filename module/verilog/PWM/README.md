@@ -149,6 +149,26 @@ end
 end    
 endmodule
 ```
+En el archivo .py, se agrega el pin físico de salida que envía la señal de pwm al servomotor para obtener el ángulo de giro deseado. Por otra parte, se conecta el clock al reloj de la FPGA y se declara el registro de escritura de 3 bits "orden".
+``` python
+from migen import *
+from migen.genlib.cdc import MultiReg
+from litex.soc.interconnect.csr import *
+from litex.soc.interconnect.csr_eventmanager import *
+
+# Modulo Principal
+class PWM(Module,AutoCSR):
+    def __init__(self, pwm):
+        self.clk = ClockSignal()   
+        self.orden = CSRStorage(3)
+        self.pwm = pwm
+
+        self.specials +=Instance("BloquePWM",
+            i_clk = self.clk,
+            i_orden = self.orden.storage,
+            o_pwm = self.pwm,
+        )
+```
 
 Finalmente se agregan los módulos y los pines el en buildSoCProject.py
 ``` python
