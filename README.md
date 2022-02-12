@@ -36,7 +36,7 @@ El mapa de memoria se presenta a continuación.
 ## [Firmware](/firmware/) :
 Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/firmware/main.c). 
 
-## Periféricos :
+## [Periféricos](/module) :
 En cada uno de los links se presenta el módulo en verilog y una explicación detallada del código utilizado para su funcionamiento.
 
 - [Ultrasonido](/module/verilog/Ultrasonido/)
