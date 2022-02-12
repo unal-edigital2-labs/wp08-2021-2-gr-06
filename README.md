@@ -39,7 +39,7 @@ El mapa de memoria se presenta a continuación.
 
 ## [Firmware](/Soc_project/firmware/) :
 Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/firmware/main.c). 
-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
+
 ## Periféricos :
 En cada uno de los links se presenta el módulo en verilog y una explicación detallada del código utilizado para su funcionamiento.
 
