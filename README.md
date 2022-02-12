@@ -63,3 +63,8 @@ Se encuentra a continuación un enlace con los vídeos de funcionamiento de cada
 - Sensor de Temperatura y Humedad
 - Resultado Final
 
+## Consideraciones Finales :
+
+- Teniendo en cuenta dificultades presentadas dentro de la realización del presente proyecto, se recomienda tener especial cuidado con la conexión de todas las tierras del circuito a un punto fijo, ya que el correcto funcionamiento de algunos módulos (por no decir de todos) depende de esto. Si se llega a tener un movimiento extraño en el [servomotor](/module/verilog/PWM) o si se está recibiendo extraños caracteres por el celular debido al módulo [Bluetooth](/Arduino/Bluetooth), son algunos de los problemas presentados, si no se tiene en cuenta lo anterior.
+- Se recomienda realizar un correcto uso del [sensor infrarrojo](/module/verilog/Infrarrojo/) para poder tener un mayor control en el Robot Cartográfico, ya que como se puede ver en el video, al tener líneas paralelas para el frenado, un posible error en la mecánica de los [motorreductores](/Arduino/Motores) ocasionó que fuera necesario tener que reposicionar el robot en el camino.
+- El módulo de cámara se encuentra en el repositorio, aunque este no fue posible implementarse finalmente los avances presentados quedan disponibles en la misma carpeta de módulos como ayuda para una posible implementación.
