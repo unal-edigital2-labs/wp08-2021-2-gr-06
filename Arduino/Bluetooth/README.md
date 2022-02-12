@@ -4,8 +4,7 @@ Para la comunicación por Bluetooth, se hizo uso de un microprocesador ESP32 apr
 
 El código se basa principalmente en realizar la lectura por el puerto serial y enviarlo por el puerto bluetooth. Se imprimen algunos mensajes en pantalla para indicar el correcto funcionamiento del dispositivo y para inicializar la conexión con el celular. [Código en Arduino](/Arduino/Bluetooth/Bluetooth.ino).
 
-```clike
-
+```Clike
 void loop() {
   if (Serial2.available()) { //Encuentra algo en el Rx
    dato = Serial.read();     //Guarda el dato disponible en el Puerto serial
