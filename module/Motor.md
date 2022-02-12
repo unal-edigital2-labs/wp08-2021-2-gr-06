@@ -1,6 +1,6 @@
 ## Motores
 
-Los motores se conectaron por medio de un puente H a un Arduino Mega 2560. Se comunican a través del uart1 en donde dependiendo de la información recolectada por los sensores, estos girarán haciendo mover al carrito. Para ver el código completo puede acceder al siguiente link [Motores](/main/Arduino)
+Los motores se conectaron por medio de un puente H a un Arduino Mega 2560. Se comunican a través del uart1 en donde dependiendo de la información recolectada por los sensores, estos girarán haciendo mover al carrito. Para ver el código completo puede acceder al siguiente link [Motores](/Arduino)
 
 ```
 void loop () {
