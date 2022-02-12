@@ -39,3 +39,7 @@ Se agregan los pines y los módulos en el buildSoCProjetc.py
 SoCCore.add_csr(self, "ultrasonido")
 self.submodules.ultrasonido = ultrasonido.Ultrasonido(platform.request("us_trigger"), platform.request("us_echo"))
 ```
+# Mapa de Memoria - Registros del Periférico
+| csr_register| Direccion |      |
+| ------------- | ------------- | ------------- |
+|infra_cntrl_output_infra|0x82006800|ro|
