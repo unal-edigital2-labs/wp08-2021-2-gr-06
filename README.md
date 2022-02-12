@@ -33,7 +33,7 @@ El mapa de memoria se presenta a continuación.
 |timer0|0x82008800|
 |uart|0x82009000|
 
-## [Firmware](/Soc_project/firmware/) :
+## [Firmware](/firmware/) :
 Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/firmware/main.c). 
 
 ## Periféricos :
