@@ -39,7 +39,7 @@ El mapa de memoria se presenta a continuación.
 
 ## [Firmware](/Soc_project/firmware/) :
 Se presenta la información del código usado para el desarrollo del funcionamiento del robot cartógrafo y principalmente el archivo [main.c](/firmware/main.c). 
-
+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
 ## Periféricos :
 En cada uno de los links se presenta el módulo en verilog y una explicación detallada del código utilizado para su funcionamiento.
 
@@ -48,6 +48,7 @@ En cada uno de los links se presenta el módulo en verilog y una explicación de
 - [Servomotor (pwm)](/module/verilog/PWM)
 - [Motores](/Arduino/Motores)
 - [Bluetooth](/Arduino/Bluetooth)
+- [Sensor de Temperatura](/Arduino/Sensor Temperatura)
 
 ## Alimentación:
 Se alimentan los periféricos a través de una extensión y un cargador de 5V/2A. El puente H se alimenta con 8 pilas AA para alcanzar los 12 voltios requeridos y la corriente que necesitan los motores para mover el carro. Debido a algunos inconvenientes con la alimentación de la FPGA y el Arduino, estos se conectan a los puertos USB del computador y se debe mover el computador según la ruta que siga el robot.
