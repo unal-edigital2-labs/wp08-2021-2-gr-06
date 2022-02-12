@@ -1,44 +1,8 @@
 ## Motores
 
-Los motores se conectaron por medio de un puente H a un Arduino Mega 2560. Se comunican a través del uart1 en donce dependiendo de la infromación recolectada por los sensores, estos girarán haciendo mover al carrito. 
+Los motores se conectaron por medio de un puente H a un Arduino Mega 2560. Se comunican a través del uart1 en donde dependiendo de la información recolectada por los sensores, estos girarán haciendo mover al carrito. Para ver el código completo puede acceder al siguiente link [Motores](/main/Arduino)
 
-```` Arduino
-/////////////////////////////////////////////////////////
-///// CONTROL MOTORES CARRITO EXPLORADOR - PUENTE H /////
-/////////////////////////////////////////////////////////
-
-// Motor 1
-int ENA = 10;
-int IN1 = 9;
-int IN2 = 8;
-
-// Motor 2
-int ENB = 5;
-int IN3 = 7;
-int IN4 = 6;
-
-// Control
-char Motor_1 = 0;
-
-void setup () {
-  
-  // PINES DE SALIDA - Puente H
-  pinMode (ENA, OUTPUT);
-  pinMode (ENB, OUTPUT);
-  pinMode (IN1, OUTPUT);
-  pinMode (IN2, OUTPUT);
-  pinMode (IN3, OUTPUT);
-  pinMode (IN4, OUTPUT);
-  
-  // PINES DE ENTRADA - Control por Software  //   I   -   Parar
-  pinMode (Motor_1, INPUT);                   //   G   -   Avanzar
-                                              //   H   -   Izquierda
-                                              //   J   -   Derecha
-  Serial.begin(9600);
-  Serial1.begin(9600);
-                                              
-}
-
+```
 void loop () {
 
   if (Serial.available()){
@@ -52,77 +16,8 @@ void loop () {
 
 }
 
-void Avanzar () {
-
-  //Direccion motor A
-  digitalWrite (IN1, HIGH);
-  digitalWrite (IN2, LOW);
-  analogWrite (ENA, 95); //Velocidad motor A
-  
-  //Direccion motor B
-  digitalWrite (IN3, HIGH);
-  digitalWrite (IN4, LOW);
-  analogWrite (ENB, 90); //Velocidad motor B
-
-}
-
-void Atras () {
-  
-  //Direccion motor A
-  digitalWrite (IN1, LOW);
-  digitalWrite (IN2, HIGH);
-  analogWrite (ENA, 120); //Velocidad motor A
-  
-  //Direccion motor B
-  digitalWrite (IN3, LOW);
-  digitalWrite (IN4, HIGH);
-  analogWrite (ENB, 120); //Velocidad motor B
-  
-}
-
-void Derecha () {
-  
-  //Direccion motor A
-  digitalWrite (IN1, HIGH);
-  digitalWrite (IN2, LOW);
-  analogWrite (ENA, 170); //Velocidad motor A
-  
-  //Direccion motor B
-  digitalWrite (IN3, LOW);
-  digitalWrite (IN4, HIGH);
-  analogWrite (ENB, 170); //Velocidad motor B
-  
-}
-
-void Izquierda () {
-  
-  //Direccion motor A
-  digitalWrite (IN1, LOW);
-  digitalWrite (IN2, HIGH);
-  analogWrite (ENA, 255); //Velocidad motor A
-  
-  //Direccion motor B
-  digitalWrite (IN3, HIGH);
-  digitalWrite (IN4, LOW);
-  analogWrite (ENB, 255); //Velocidad motor B
-}
-
-
-void Parar () {
-  
-  //Direccion motor A
-  digitalWrite (IN1, LOW);
-  digitalWrite (IN2, LOW);
-  analogWrite (ENA, 0);   //Velocidad motor A
-  
-  //Direccion motor B
-  digitalWrite (IN3, LOW);
-  digitalWrite (IN4, LOW);
-  analogWrite (ENB, 0);   //Velocidad motor B
-  
-}
 ```
-
+En el archivo [main.c](/main/firmware/main.c) se declara la función **rotate_car** la cual recibe una variable booleana que determina la direccción del giro y envía el caracter correspondiente por el uart1 al arduino.
 ``` C
 void rotate_car(bool right){
 	if (right){
