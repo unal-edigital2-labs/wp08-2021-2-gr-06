@@ -99,3 +99,10 @@ Se agrega este modulo en el buildSocproject.py donde se asignaran las variables 
 self.submodules.ultrasonido = ultrasonido.Ultrasonido(platform.request("us_trigger"), platform.request("us_echo"))
 
 ```
+# Mapa de Memoria - Registros del Periférico
+| csr_register| Direccion |      |
+| ------------- | ------------- | ------------- |
+|ultrasonido_orden|0x82007800|rw|
+|ultrasonido_done|0x82007804|ro|
+|ultrasonido_d|0x82007808|ro|
+| ------------- | ------------- | ------------- |
