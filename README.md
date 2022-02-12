@@ -45,6 +45,7 @@ En cada uno de los links se presenta el módulo en verilog y una explicación de
 
 - [Ultrasonido](/module/verilog/Ultrasonido/)
 - [Infrarrojos](/module/verilog/Infrarrojo/)
+- [Motores](/module/Motores.md)
 - [Arduino](/Arduino)
 
 ## Alimentación:
