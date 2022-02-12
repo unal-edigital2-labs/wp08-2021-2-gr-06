@@ -6,7 +6,7 @@ Se presenta toda la información de los módulos, tanto los archivos de Python c
 - [Ultrasonido](/module/verilog/Ultrasonido)
 
 ## Uart
-Para la implementación del protocolo UART, se hizo uso de los archivos de litex creados para este propósito. Para poder utilizar el protocolo es necesario agregar las siguientes líneas de código en el archivo [builSoCProject.py](/main/builSoCProject.py):
+Para la implementación del protocolo UART, se hizo uso de los archivos de litex creados para este propósito. Para poder utilizar el protocolo es necesario agregar las siguientes líneas de código en el archivo [builSoCProject.py](/builSoCProject.py):
 
 ```python
 self.submodules.uart1_phy = uart.UARTPHY(
