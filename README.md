@@ -46,8 +46,8 @@ En cada uno de los links se presenta el módulo en verilog y una explicación de
 - [Ultrasonido](/module/verilog/Ultrasonido/)
 - [Infrarrojos](/module/verilog/Infrarrojo/)
 - [Servomotor (pwm)](/module/verilog/PWM)
-- [Motores](/module/Motor.md)
-- [Bluetooth](/Arduino)
+- [Motores](/Arduino/Motores)
+- [Bluetooth](/Arduino/Bluetooth)
 
 ## Alimentación:
 Se alimentan los periféricos a través de una extensión y un cargador de 5V/2A. El puente H se alimenta con 8 pilas AA para alcanzar los 12 voltios requeridos y la corriente que necesitan los motores para mover el carro. Debido a algunos inconvenientes con la alimentación de la FPGA y el Arduino, estos se conectan a los puertos USB del computador y se debe mover el computador según la ruta que siga el robot.
